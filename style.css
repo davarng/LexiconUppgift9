@@ -5,3 +5,11 @@ body {
   height: 100%;
   width: 100%;
 }
+
+.result {
+  background-color: rgb(245, 231, 231);
+}
+
+.result:empty {
+  display: none; /* Hide the <p> if empty */
+}

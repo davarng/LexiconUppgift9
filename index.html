@@ -13,9 +13,9 @@
   <header class="navbar">header</header>
   <body class="bg-light">
     <div class="container mt-5">
-      <div class="row justify-content-center">
+      <div class="row mt-5 justify-content-center">
         <div class="col-4">
-          <form>
+          <form id="bishBoshForm">
             <p>
               To use this form enter the number of iterations you want to run, a
               bish-number and a bosh-number and we will let you know which
@@ -26,8 +26,8 @@
               <input
                 type="number"
                 class="form-control"
-                id="iterations"
-                min="0"
+                name="iterations"
+                min="1"
                 required
               />
             </div>
@@ -36,8 +36,8 @@
               <input
                 type="number"
                 class="form-control"
-                id="bish"
-                min="0"
+                name="bish"
+                min="1"
                 required
               />
             </div>
@@ -46,13 +46,18 @@
               <input
                 type="number"
                 class="form-control"
-                id="bish"
-                min="0"
+                name="bosh"
+                min="1"
                 required
               />
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
+        </div>
+        <div class="col-4">
+          <div class="rounded">
+            <p id="result" class="result p-2 rounded"></p>
+          </div>
         </div>
       </div>
     </div>
