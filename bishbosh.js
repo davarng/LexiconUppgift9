@@ -32,4 +32,5 @@ document
     const bosh = document.querySelector('[name="bosh"]').value;
 
     PrintBishBosh(BishBosh(iterations, bish, bosh));
+    event.target.reset();
   });

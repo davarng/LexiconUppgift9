@@ -11,5 +11,5 @@ body {
 }
 
 .result:empty {
-  display: none; /* Hide the <p> if empty */
+  display: none;
 }
