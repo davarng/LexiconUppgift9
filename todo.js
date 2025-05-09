@@ -17,8 +17,8 @@ document
 
 document.getElementById("todoList").addEventListener("click", function (event) {
   if (event.target.classList.contains("delete-btn")) {
-    event.target.parentElement.remove();
+    event.target.closest("li").remove();
   } else if (event.target.classList.contains("check-btn")) {
-    event.target.previousElementSibling.classList.toggle("done");
+    event.target.closest("li").classList.toggle("done");
   }
 });

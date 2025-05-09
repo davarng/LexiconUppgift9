@@ -18,7 +18,11 @@ body {
   background-color: rgb(150, 229, 255);
 }
 
-.todo-text.done {
+.done {
+  background-color: rgb(251, 149, 149);
+}
+
+.done p {
   text-decoration: line-through;
   color: black;
 }
