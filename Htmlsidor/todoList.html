@@ -13,9 +13,35 @@
 
   <body class="bg-light d-flex flex-column min-vh-100">
     <reusable-header></reusable-header>
-    <main><div class="container"></div></main>
+    <main>
+      <div class="container">
+        <div class="container mb-5">
+          <div class="row mt-5 justify-content-center">
+            <div class="col-md-3 col-8">
+              <form id="todoForm" class="mb-3">
+                <h2>Add Todo</h2>
+
+                <div class="mb-3">
+                  <label for="todoMessage" class="form-label">Todo text</label>
+                  <textarea
+                    name="todoMessage"
+                    type="text"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="col-md-3 col-8 border-start border-dark">
+              <ul id="todoList" class="list-unstyled align-items-center"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <reusable-footer class="mt-auto"></reusable-footer>
     <script type="module" src="../reusableComponents.js"></script>
-    <script src="../bishbosh.js"></script>
+    <script src="../todo.js"></script>
   </body>
 </html>

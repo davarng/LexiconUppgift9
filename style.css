@@ -13,3 +13,12 @@ body {
 .result:empty {
   display: none;
 }
+
+.todo-li {
+  background-color: rgb(150, 229, 255);
+}
+
+.todo-text.done {
+  text-decoration: line-through;
+  color: black;
+}
