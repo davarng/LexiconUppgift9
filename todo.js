@@ -1,7 +1,3 @@
-function PrintBishBosh(message) {
-  document.getElementById("result").textContent = message;
-}
-
 document
   .getElementById("todoForm")
   .addEventListener("submit", function (event) {
